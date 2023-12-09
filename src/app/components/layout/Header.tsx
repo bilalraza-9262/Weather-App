@@ -34,9 +34,9 @@ const Header = () => {
 						</div>
 						<div onClick={clicked} className='sm:hidden block hover:cursor-pointer'>
 							{isClick ? (
-								<Image src={humbergerClicked} alt='Cross' />
+								<Image width={40} src={humbergerClicked} alt='Cross' />
 							) : (
-								<Image src={humbergerUnclicked} alt='Click' />
+								<Image width={40} src={humbergerUnclicked} alt='Click' />
 							)}
 						</div>
 					</div>
