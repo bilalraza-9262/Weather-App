@@ -20,8 +20,8 @@ const Header = () => {
 			<Wrapper>
 				<header className=''>
 					<div className='flex justify-between items-center p-2'>
-						<div className='flex flex-col items-center'>
-							<Image width={40} src={logo} alt='Weather Logo ' />
+						<div className='flex flex-col items-center hover:cursor-pointer'>
+							<Link href={"/"}><Image width={40} src={logo} alt='Weather Logo ' /></Link>
 							<label className='text-sm font-medium' htmlFor="">Day and Night</label>
 						</div>
 						<div className='sm:block hidden'>
