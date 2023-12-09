@@ -27,11 +27,12 @@ const safetyData = [
 const Safety = () => {
 	return (
 		<Wrapper>
-			<div className='bg-black/40 rounded-xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]  m-5 p-4'>
+			<div className="fixed top-0 bottom-0 left-0 right-0 bg-black/20 z-10" />
+			<div className='bg-black/40 rounded-xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] relative z-20 m-5 p-4'>
 
 				{safetyData.map((val) => (
-					<div key={val.id} className=" m-6 p-5 bg-white/5  text-center text-white text-lg font-extralight leading-relaxed">
-						<h2 className="text-xl font-medium m-3 underline">{val.title}</h2>
+					<div key={val.id} className=" m-6 p-5 bg-white/5 backdrop-blur-sm text-center text-white text-[9px] sm:text-lg font-extralight leading-relaxed">
+						<h2 className="text-sm sm:text-xl font-medium m-3 underline">{val.title}</h2>
 						<p>{val.description}</p>
 					</div>
 				)

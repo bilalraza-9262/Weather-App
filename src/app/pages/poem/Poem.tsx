@@ -4,7 +4,6 @@ import React from 'react'
 function Poem() {
 	return (
 		<section className='text-white'>
-			<div className="absolute top-0 bottom-0 left-0 right-0 bg-black/40 z-10" />
 			<Wrapper>
 				<div className='relative z-20 flex justify-around mt-20 m-4 text-3xl font-serif' >
 
@@ -12,8 +11,8 @@ function Poem() {
 				</div>
 				<div className='flex gap-5 relative z-20 flex-col lg:flex-row items-center lg:items-stretch'>
 					<div className='flex flex-col items-center gap-3'>
-						<h2 className='text-2xl font-serif'>“The Windy Day”</h2>
-						<div className='font-light md:text-xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] w-full  rounded-xl  bg-white/5 text-center p-7 leading-relaxed'>
+						<h2 className='text-xl sm:text-2xl font-serif'>“The Windy Day”</h2>
+						<div className='font-light md:text-xl shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] w-full  rounded-xl backdrop-blur-sm bg-white/5 text-center p-7 leading-relaxed'>
 							It started this morning
 							with the gentlest of breeze -
 							barely enough to rustle
@@ -46,8 +45,8 @@ function Poem() {
 						</div>
 					</div>
 					<div className='flex flex-col items-center gap-3'>
-						<h2 className='text-2xl font-serif'>“Saving For A Rainy Day” </h2>
-						<div className='font-light   md:text-xl rounded-xl w-full  shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]  relative z-20   bg-white/5 text-center p-7 leading-relaxed'>
+						<h2 className='text-xl sm:text-2xl font-serif'>“Saving For A Rainy Day” </h2>
+						<div className='font-light flex-1  md:text-xl rounded-xl w-full  shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]  relative z-20 backdrop-blur-sm  bg-white/5 text-center p-7 leading-relaxed'>
 							I pretended all Summer,
 							they didn’t exist,
 							but with Autumn arriving,

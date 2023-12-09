@@ -4,7 +4,10 @@
 
 body{
 	background-image: url("../../public/Images/body-Image.jpg");
-	background-size: cover;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* opacity: 0.33; */
 	/* background-position: 100%; */
 }
