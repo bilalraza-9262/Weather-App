@@ -26,10 +26,10 @@ const Header = () => {
 						</div>
 						<div className='sm:block hidden'>
 							<ul className='flex gap-x-6 mr-4'>
-								<li className='hover:font-medium hover:underline focus:text-blue-950'><Link href={"/"}>Weather</Link></li>
-								<Link className='hover:font-medium hover:underline' href={"../../pages/safety"}>Safety</Link>
+								<li className='  hover:border-b-2 border-blue-500 focus:text-blue-950'><Link href={"/"}>Weather</Link></li>
+								<Link className=' hover:border-b-2 border-blue-500' href={"../../pages/safety"}>Safety</Link>
 
-								<li className='hover:font-medium hover:underline focus:text-blue-950'><Link href={"../../pages/about"}>About</Link></li>
+								<li className='  hover:border-b-2 border-blue-500 focus:text-blue-950'><Link href={"../../pages/about"}>About</Link></li>
 							</ul>
 						</div>
 						<div onClick={clicked} className='sm:hidden block hover:cursor-pointer'>
