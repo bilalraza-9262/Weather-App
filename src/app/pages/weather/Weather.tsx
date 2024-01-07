@@ -15,21 +15,22 @@ const Weather = () => {
 	const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`;
 	const [isAllow, setIsAllow] = useState<boolean>(true)
 	const [isCorrect, setIsCorrect] = useState<boolean>(false)
-
+	const [weatherDataTemp,setweatherDataTemp]=useState<number>(0)
 	// callApi()
 	// form submit function
 	const formHandler = (e: FormEvent) => {
 		e.preventDefault();
+		// console.log();
 
 		axios.get(url).then(res => {
 
 			setweatherData(res.data);
-			// console.log(res.data);
+			console.log(res.data);
 			setIsAllow(false);
 			setIsCorrect(false)
-
+			setweatherDataTemp((weatherData!.main.temp - 32) * (5 / 9))
 		}).catch((err) => {
-
+			
 			setIsAllow(false);
 			setIsCorrect(true)
 		})
@@ -112,7 +113,7 @@ const Weather = () => {
 								/>
 								<p className='text-2xl'>{weatherData?.weather[0].main}</p>
 							</div>
-							<div className="text-6xl sm:text-8xl">{weatherData?.main.temp.toFixed(0)}&#176;</div>
+							<div className="text-6xl sm:text-8xl">{weatherDataTemp.toFixed(0)}&#176;</div>
 						</section>
 
 						{/* botoom part */}
